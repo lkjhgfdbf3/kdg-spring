@@ -9,4 +9,16 @@
 
 	<bean id="greeter" class="com.kdg.jdbc.spring.Greeter" />
 
+	<bean id="memberDao" class="com.kdg.jdbc.example.MemberDao" />
+
+	<bean id="articleService"
+		class="com.kdg.jdbc.example.ArticleService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
+	<bean id="memberService"
+		class="com.kdg.jdbc.example.MemberService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
 </beans>
