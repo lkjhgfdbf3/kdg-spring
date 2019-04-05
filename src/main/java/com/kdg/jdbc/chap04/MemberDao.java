@@ -33,4 +33,5 @@ public class MemberDao {
 	public void insert(Member member) {
 		map.put(member.getEmail(), member);
 	}
+ 
 }
