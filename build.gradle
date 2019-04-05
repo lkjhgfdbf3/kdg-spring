@@ -38,21 +38,21 @@ task runSpringMain(type: JavaExec) {
 }
 
 task runMemberMain(type: JavaExec) {
-	main = 'org.jacob.book.chap03.MemberMain'
+	main = 'com.kdg.jdbc.chap03.MemberMain'
 	classpath =  sourceSets.main.runtimeClasspath
 }
 
 task runMemberMainUsingSpring(type: JavaExec) {
-	main = 'org.jacob.book.chap03.MemberMainUsingSpring'
+	main = 'com.kdg.jdbc.chap03.MemberMainUsingSpring'
 	classpath =  sourceSets.main.runtimeClasspath
 }
 
 task runMemberMainUsingComponentScan(type: JavaExec) {
-	main = 'org.jacob.book.chap04.MemberMainUsingComponentScan'
+	main = 'com.kdg.jdbc.chap04.MemberMainUsingComponentScan'
 	classpath =  sourceSets.main.runtimeClasspath
 }
 
 task runSpringJdbcMain (type: JavaExec) {
-	main = 'org.jacob.jdbc.spring.SpringJdbcMain'
+	main = 'com.kdg.jdbc.spring.SpringJdbcMain'
 	classpath =  sourceSets.main.runtimeClasspath
 }
