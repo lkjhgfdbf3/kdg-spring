@@ -12,7 +12,7 @@
 
 	 
 	<bean id="memberRegisterService"
-		class="org.jacob.book.chap03.MemberRegisterService">
+		class="com.kdg.jdbc.chap03.MemberRegisterService">
 		<property name="memberDao" ref="memberDao"/>
 	</bean>
 
